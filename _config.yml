@@ -1,0 +1,269 @@
+# Site
+repository: Git repository where your resume will be hosted, only required if you are hosting on GitHub (eg. sproogen/modern-resume-theme)
+# favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
+
+# Content configuration version
+version: 2
+
+# Personal info
+name: Baris Yazici
+title: Software Engineer
+email: baris.yazici@tum.de
+# email_title: Email (Email title override)
+# phone: Your phone number (optional)
+# phone_title: Phone (Phone title override)
+# website: Your website (eg. https://google.com)(optional)
+# website_title: Web (Website title override)
+
+# Dark Mode (true/false/never)
+darkmode: never
+
+# Social links
+# twitter_username: jekyllrb
+github_username:  BarisYazici
+# stackoverflow_username: "00000001"
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+# instagram_username: jekyll
+linkedin_username: jekyll
+# xing_username: jekyll
+# pinterest_username: jekyll
+# youtube_username: jekyll
+# googleplus_username: +jekyll
+# orcid_username: 0000-0000-0000-0000
+
+# Additional icon links
+additional_links:
+  - title: Medium
+    icon: fab fa-medium
+    url: https://barisyazici.medium.com/
+# - title: another link
+#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
+#   url: Link url (eg. https://google.com)
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
+
+# About Section
+# about_title: About Me (Use this to override about section title)
+about_profile_image: images/profile.jpg
+about_content: | # this will include new lines to allow paragraphs
+    Hi! I'm Baris :) I'm a software engineer based in Munich. I'm specialized in Machine Learning applications in Robotics field. I am most proud of the
+    Reinforcement Learning for autonomous robotics grasping [project](https://github.com/BarisYazici/deep-rl-grasping) - you read in detail in the Medium  <a href="https://bit.ly/3s1srPr">post</a>.
+    
+    I am constantly challenging myself with new goals. Recently, I passed the Workera machine learning engineer [certification](https://app.workera.ai/public/candidate/certificate?code=HTAUGOEY).
+    In the side I am learning meta-learning in object-detection field and developing a basic project. Please feel free to contact me via e-mail.
+
+  # - Lists
+  # - Tables
+  # - <a href="google.com">Links</a>
+  # - Images ![alt text](/images/landscape-trees.jpg "Trees")
+
+content:
+  - title: Projects # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top-middle
+        title: Autonomous Robot Grasping
+        link: github.com/BarisYazici/deep-rl-grasping
+        # link_text: 
+        additional_links:
+          - title:  Medium Post
+            icon: fab fa-medium
+            url: https://bit.ly/3s1srPr
+          - title:  Github Page
+            icon: fab fa-github
+            url: github.com/BarisYazici/deep-rl-grasping
+        quote: >
+          Learning object grasping from raw depth sensor data with Reinforcement Learning in <mark>Pybullet</mark> simulation.
+        description: | # this will include new lines to allow paragraphs
+          This project has begun with my master's thesis project- full report can be foud [here](https://github.com/BarisYazici/tum_masters_thesis/blob/master/final_report.pdf).
+          I developed the project even further after I handed my dissertation. It evolved to a fully open-source project that aims to help all robotics enthusiast.
+          This projects presents a convenient way to train robotics hand for object manipulation. It includes two different scenes(table and plane) to test the trained model.
+          It uses <mark>OpenAI-Gym</mark> to describe the environment. It has built-in support for depth, RGB-D and auto-encoder observation. There are trained models in <mark>SAC</mark>, 
+          <mark>DQN</mark> and in <mark>BDQ</mark> Reinforcement Learning algorithm.
+          
+          The trainning structure supports <mark>curriculum learning</mark>, <mark>shaped reward</mark> integration for speeding up the training.
+     
+      - layout: top-middle
+        title: Learning-based Adaptable Motion Control
+        link: https://github.com/Roboy/gym-roboy
+        # link_text: 
+        additional_links:
+          - title:  Medium
+            icon: fab fa-medium
+            url: https://medium.com/@tomas.ruiz.te
+          - title:  Github Page
+            icon: fab fa-github
+            url: https://github.com/Roboy/DeepAndReinforced
+        quote: >
+          Controlling the tendons of the Roboy with <mark> PPO </mark> algorithm. Trained the agent on <GCP> in a <mark>Docker</mark> container
+        description: | # this will include new lines to allow paragraphs 
+          Roboy's joints are actuated with tendons, akin to humans. It is challenging to control the length of tendon to build to move the joint in a specified problem.
+          The traditional control approach suffers to perform, because of the modelling difficulties, such as elasticity of the tendon or the uncertainty of the tendon length
+          when it is wrapped around the pulley.
+
+          Therefore we developed an adaptable system with <mark>Deep Reinforcement Learning</mark>. We describe the environment with <mark>OpenAI gym</mark> and trained the
+          model with <mark>PPO</mark> algorithm on <mark>Google Cloud Platform</mark>. I implemented the gym interface and the physics simulations helper functions.
+
+      - layout: top-middle
+        title: Kinect Fusion Markerless Augmented Reality
+        link: github.com/Zielon/3DScanning
+        additional_links:
+          - title:  Github Page
+            icon: fab fa-github
+            url: https://github.com/Zielon/3DScanning
+        quote: >
+          Term project of <a href:"https://www.in.tum.de/cg/teaching/winter-term-1718/3d-scanning-motion-capture/">3D Scanning and Motion Capture</a> course at TUM. 3D Reconstructed the world and interacted with it in Unity
+        description:
+          Developed a real-time kinect fusion pipeline for reconstruction and augment reality application. 
+          We used Iterative Closest Point(<mark>ICP</mark>) algorithm for camera tracking and marching cubes to extract the meshes.
+          Later we transferred the meshes to <mark>Unity</mark> and interacted the world with such as rendering balls or bottles on the reconstructed world.
+
+      - layout: top-middle
+        title: Roboy Gesture Mirroring
+        link: https://roboy.org/students/hand/
+        # link_text: 
+        additional_links:
+          - title:  YouTube
+            icon: fab fa-youtube
+            url: https://www.youtube.com/watch?v=uKjYwrlTxno
+          - title:  Github Page
+            icon: fab fa-github
+            url: https://github.com/Roboy/ss18_hand
+        quote: >
+          Detect hand gestures with <mark>SSD</mark> transfer to <mark>Gazebo</mark> simulation via <mark>ROS</mark> 
+        description: | # this will include new lines to allow paragraphs
+          Roboy is one of the biggest student teams in Technical University of Munich. We are developing a tendon-actuated humanoid robot. One part of the project was to detect the hand with <mark>SSD</mark> model in a real-time video stream from <mark>Leap Motion</mark> camera.
+          The other part is the classify the hand with a specific gesture-id. This gesture is then passed to the simulation of the Hand model via <mark>ROS</mark> communication.
+
+          Hand model is develop based on a previous template on <mark>AutoDesk Fusion</mark>
+
+      - layout: top-middle
+        title: Extreme Europe
+        link: extremeurope.herokuapp.com
+        # link_text: 
+        additional_links:
+          - title:  Github Page
+            icon: fab fa-github
+            url: github.com/BarisYazici/extremeurope
+        quote: >
+          Web service to facilitate the communication between extreme sporters. Developed on <mark>Ruby on Rails</mark> and deployed with <mark>heroku</mark>
+        description: | # this will include new lines to allow paragraphs
+          I started this project to familiarize myself with web development in the early stages of my university education :) The website is based on RESTFUL api. Every user can
+          add a category(accomodation, transport, guidance) for a specific extreme sport type(Rock Climbing, Ski Touring or Wind Surf). It allows user to search functionality with <mark>elasticsearch</mark> plugin.
+
+      - layout: top-middle
+        title: FleetMe
+        link: bemostwanted.herokuapp.com
+        # link_text: 
+        additional_links:
+          - title:  Github Page
+            icon: fab fa-github
+            url: https://github.com/BarisYazici/TUM_Mobility_Services
+        quote: >
+          Fleet Management application that makes use of BMW Car-Data API. Developed with <mark>Node.js</mark> and <mark>MongoDB</mark> in the backend and <mark>react</mark> in the front-end
+        description: | # this will include new lines to allow paragraphs
+          As part of Technical Unviversity Munich's mobility services course in coordination with BMW, we developed a Fleet Management application using BMW CarData.
+          We used <mark>MongoDB</mark>, <mark>Express.js</mark> and <mark>Node.js</mark> in the backend and <mark>React</mark> for the front-end.
+
+  - title: Experience
+    layout: list
+    content:
+      - layout: right
+        title: Human Brain Project
+        sub_title: Research Assistant
+        caption: October 2020 - December 2020
+        link: https://www.humanbrainproject.eu/en/
+        quote: >
+          The Human Brain Project aims to put in place a cutting-edge research infrastructure that will allow scientific and industrial researchers to advance our knowledge in the fields of neuroscience, computing, and brain-related medicine 
+        description: | # this will include new lines to allow paragraphs
+          I was responsible to improve Neurorobotics [platform](https://neurorobotics.net/). I designed the <mark>Gazebo</mark> simulation environment in order to train the Kuka robot to learn object grasping.
+          I designed the communication API with <mark>ROS</mark> in <mark>Docker</mark> container to enable the training with <mark>stable baselines</mark> reinforcement learning algorithms.
+      
+      - layout: left
+        title: Magazino
+        sub_title: Robotics Software Engineer
+        caption: June 2019 - October 2019
+        link: https://www.magazino.eu/
+        quote: >
+          Magazino develops and builds intelligent, mobile robots for intralogistics.
+        description: | # this will include new lines to allow paragraphs
+          I took on the role to simulate the <mark>CANbus</mark> motor communication. I contributed the test stack to continously on <mark>Jenkins</mark> for software department.
+
+          I developed a <mark> ROS </mark> package to collect data from the TORU robot for the box unstacking process. Later, I processed the data with <mark> pandas </mark> and visualized it with <mark> matplotlib </mark>
+
+  - title: Education
+    layout: list
+    content:
+      - layout: top-right
+        title: Technical University of Munich
+        sub_title: MSc. Computer Science
+        caption: 2017 - 2020
+        quote: >
+          Computer Science department ranked <a href="https://www.timeshighereducation.com/world-university-rankings/technical-university-munich">14th</a> in the world in 2021
+        description: | # this will include new lines to allow paragraphs
+          I actively took part in Roboy student team, where I did 3 projects. I 
+          I was awarded the TUM graduation scholarship. Graduated with 1.7/5 GPA (1 is the max)
+
+      - layout: top-left
+        title: BME - Budapest Technology University
+        sub_title: BSc. Robotics Engineering
+        caption: 2016 - 2016
+        quote: >
+          Oldest university of Hungary opened in 1635
+        description: | # this will include new lines to allow paragraphs
+         I spent my exchange semester at Budapest. I met so many cool people around the world and finished the semester with a 3.45/4 GPA.
+      - layout: top-right
+        title: Sabanci University
+        sub_title: BSc. Robotics Engineering
+        caption: 2012 - 2017
+        quote: >
+          Selected the most innovative University of Turkey 5 times in a row from 2012-2017. Rankings <a href="https://www.sabanciuniv.edu/en/university-rankings">page</a>
+        description: | # this will include new lines to allow paragraphs
+          Sabanci University is a unique university in Turkey, it allows students to select their courses flexibly. Students can easily change their major.
+          I took advantage of this system and attended courses from Robotics, Electronics and Computer Science departments. I graduated with 3.25/4 GPA(4 is the max)
+
+          I led the Mountaineering Club between 2014-2015 - [SUDOSK](https://www.instagram.com/sudosk/?hl=en). I organized and led many educational camps in Turkey with over 25 participants.
+          I restructured the theoretical climbing education and maintained the official communication between the club and the University.
+  
+  - title: Whenever I don't sit in front of my computer
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+
+      - Rock climbing all over the Baverian alps.
+      - Organized a climbing course in Biederstein dormitory - [here](https://www.youtube.com/watch?v=ym6rXDl_BMc&feature=youtu.be) and [here](https://www.youtube.com/watch?v=EM-3iTOYjrM&feature=youtu.be)
+      - Tought myself marbling art - you can take a look at our instagram [page](https://www.instagram.com/marblingnatur/)
+      - Petting my plants
+
+# Footer
+footer_show_references: false
+# references_title: References on request (Override references text)
+
+# Build settings
+# theme: modern-resume-theme (Use this is you are hosting your resume yourself)
+# remote_theme: sproogen/modern-resume-theme (Use this if you are hosting your resume on GitHub)
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
+
+exclude : [
+  "Gemfile",
+  "Gemfile.lock",
+  "node_modules",
+  "vendor/bundle/",
+  "vendor/cache/",
+  "vendor/gems/",
+  "vendor/ruby/",
+  "lib/",
+  "scripts/",
+  "docker-compose.yml",
+  ]
