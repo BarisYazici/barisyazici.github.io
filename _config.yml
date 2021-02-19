@@ -26,7 +26,7 @@ github_username:  BarisYazici
 # facebook_username: jekyll
 # flickr_username: jekyll
 # instagram_username: jekyll
-linkedin_username: jekyll
+linkedin_username: baris-yazici-607465b6
 # xing_username: jekyll
 # pinterest_username: jekyll
 # youtube_username: jekyll
@@ -53,11 +53,24 @@ additional_links:
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
     Hi! I'm Baris :) I'm a software engineer based in Munich. I'm specialized in Machine Learning applications in Robotics field. I am most proud of the
-    Reinforcement Learning for autonomous robotics grasping [project](https://github.com/BarisYazici/deep-rl-grasping) - you read in detail in the Medium  <a href="https://bit.ly/3s1srPr">post</a>.
+    Reinforcement Learning for autonomous robotics grasping [project](https://github.com/BarisYazici/deep-rl-grasping), 
+    which was featured as Editor's Pick on Towards Data Science publication [link to post](https://bit.ly/3s1srPr).
     
     I am constantly challenging myself with new goals. Recently, I passed the Workera machine learning engineer [certification](https://app.workera.ai/public/candidate/certificate?code=HTAUGOEY).
-    In the side I am learning meta-learning in object-detection field and developing a basic project. Please feel free to contact me via e-mail.
-
+    I am also learning meta-learning in object-detection field and developing a basic project. Feel free to contact me via <a href = "mailto: baris.yazici@tum.de"> e-mail</a>.
+    
+    The technologies I am post comfortable with are: 
+    - <mark> Python </mark> 
+    - <mark> C++ </mark> 
+    - <mark> Javascript </mark> 
+    - <mark> Tensorflow </mark> 
+    - <mark> Pandas </mark> 
+    - <mark> matplotlib </mark> 
+    - <mark> OpenAI Gym </mark> 
+    - <mark> ROS </mark> 
+    - <mark> Gazebo </mark> 
+    - <mark> PyBullet </mark> 
+    - <mark> GCP </mark> 
   # - Lists
   # - Tables
   # - <a href="google.com">Links</a>
@@ -207,7 +220,7 @@ content:
         quote: >
           Computer Science department ranked <a href="https://www.timeshighereducation.com/world-university-rankings/technical-university-munich">14th</a> in the world in 2021
         description: | # this will include new lines to allow paragraphs
-          I actively took part in Roboy student team, where I did 3 projects. I 
+          I actively took part in Roboy student team, where I did 3 projects. 
           I was awarded the TUM graduation scholarship. Graduated with 1.7/5 GPA (1 is the max)
 
       - layout: top-left
@@ -239,6 +252,11 @@ content:
       - Organized a climbing course in Biederstein dormitory - [here](https://www.youtube.com/watch?v=ym6rXDl_BMc&feature=youtu.be) and [here](https://www.youtube.com/watch?v=EM-3iTOYjrM&feature=youtu.be)
       - Tought myself marbling art - you can take a look at our instagram [page](https://www.instagram.com/marblingnatur/)
       - Petting my plants
+      - Marbling <img src="images/ebru.jpeg" alt="the first ebru" width="400">
+
+      - Building <img src="images/robotting.jpeg" alt="roboy" width="400"> 
+
+      - Climbing <img src="images/climbing.jpeg" alt="climbing" width="400"> 
 
 # Footer
 footer_show_references: false
